@@ -1,0 +1,97 @@
+﻿{"name":"Trader Joes (Insert Your Corporate Branding Here)",
+"dataColors":["#6B9C3F","#ACE894","#81bb49","#256D1B","#46ACC2","#00618a","#16697A","#D5A543","#3599B8","#DFBFBF","#4AC5BB","#5F6B6D","#FB8281","#F4D25A","#7F898A","#A4DDEE","#FDAB89","#B687AC","#28738A","#A78F8F","#168980","#293537","#BB4A4A","#B59525","#475052","#6A9FB0","#BD7150","#7B4F71","#1B4D5C","#706060","#0F5C55","#1C2325"],
+"bad":"#580C13",
+"neutral":"#D5A543",
+"good":"#6B9C3F",
+"visualStyles":{
+    "page":{
+        "*":{
+            "background":[{
+                "color":{
+                    "solid":{
+                        "color":"#FFFFFF"}},
+                "transparency":0}],
+            "outspace":[{
+                 "color":{
+                     "solid":{
+                         "color":"#FFFFFF"}}}]}},
+    "*":{
+        "*":{
+          "title":    [{
+                        "show": false,
+                        "text": "Visual Title",
+                        "fontColor": {"solid": {"color": "#5f5f5f"}},
+                        "background": {"solid": {"color": "#ffffff"}},
+                        "alignment": "Center",
+                        "fontSize": 12,
+                        "fontFamily": "Segoe UI"
+                        }],
+         "dropShadow":   [{
+                        "show": true,
+                        "color": {"solid": {"color": "#5f5f5f"}},
+                        "position":"Outer",
+                        "preset":"BottomRight"
+                        }],
+         "visualHeader":    [{
+                        "show": true,
+                        "background": {"solid": {"color": "#ffffff"}},
+                        "border": false
+                        }],
+            "legend": [{
+                  "show": true,
+                  "position": "TopCenter",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 8                  
+                }],
+		"columnHeaders": [{
+			"fontColor": {"solid": {"color": "#ffffff"}},
+			"backColor": {"solid": {"color": "#6B9C3F"}},
+			"alignment": "Left",
+			"fontSize":11,
+			"wordWrap": true
+			}],
+		"grid":    [{
+			"gridVertical": false,
+			"gridVerticalColor": {"solid": {"color": "#ffffff"}},
+			"gridVerticalWeight": 1,
+			"gridHorizontal": false,
+			"gridHorizontalColor": {"solid": {"color": "#ffffff"}},
+			"gridHorizontalWeight": 1,
+			"rowPadding": 1,
+			"outlineColor": {"solid": {"color": "#ffffff"}},
+			"outlineWeight": 1
+			}]     
+        }
+    },
+          "card": {
+         "*": {
+            "calloutValue": [{
+                  "color": "#6B9C3F"
+            }]
+         }},
+
+         		"textbox": {
+			"*": {
+				"*": [{
+					"fontSize": 24,
+					"fontFamily": "Segoe UI",
+					"wordWrap": true,
+					"color": { "solid": { "color": "#6B9C3F"} }
+				}],
+                 "dropShadow":   [{
+                        "show": false
+                        }],
+				"background": [{
+					"show": true,
+					"color": { "solid": { "color": "#EAEAEA"}},
+					"transparency": 0
+				}],
+				"visualHeader": [{
+					"show": false
+				}]
+			}
+		}    
+                         
+                         
+                         }
+                         }
