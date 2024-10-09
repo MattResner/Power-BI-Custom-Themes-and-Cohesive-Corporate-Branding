@@ -7,7 +7,7 @@ By pasting a screenshot of the page into ms paint we can extract the colors that
 
 Trader joes uses the following
 
-#C81E24 - Red, their primary color
+#C81E24 - Red, their primary branding color
 
 #2C2C2C - The black seen on their homepage
 
@@ -28,3 +28,8 @@ To these we will add some important other colors such:
 #D5A543 - an yellow that I like for neutral values
 
 #3f9c6d - a green for postive values that feels in line with TJ's Brands use of teriarty colors
+
+
+
+
+https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings

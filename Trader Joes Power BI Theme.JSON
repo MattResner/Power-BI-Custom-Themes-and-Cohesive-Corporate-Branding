@@ -1,8 +1,37 @@
-﻿{"name":"Trader Joes (Insert Your Corporate Branding Here)",
+﻿{
+
+"name":"Trader Joes (Insert Your Corporate Branding Here)",
+"$schema": "reportThemeSchema-2136.json",
+
+
 "dataColors":["#C81E24","#2C2C2C", "#FFFFFF", "#FAFBF8", "#F1E99C", "#093971", "#5f5f5f"],
 "bad":"#580C13", 
 "neutral":"#D5A543",
 "good":"#3f9c6d",
+
+"textClasses": {
+        "callout": {
+            "fontSize": 45,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "title": {
+            "fontSize": 14,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "header": {
+            "fontSize": 12,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "label": {
+            "fontSize": 10,
+            "fontFace": "Segoe UI",
+            "color": "#2C2C2C"
+        }
+                },
+
 "visualStyles":{
     "page":{
         "*":{
@@ -14,17 +43,20 @@
             "outspace":[{
                  "color":{
                      "solid":{
-                         "color":"#FFFFFF"}}}]}},
+                         "color":"#FAFBF8"}}}]}},
+    
+    
+
     "*":{
-        "*":{
+        "*":{ 
           "title":    [{
                         "show": false,
                         "text": "Visual Title",
                         "fontColor": {"solid": {"color": "#5f5f5f"}},
-                        "background": {"solid": {"color": "#ffffff"}},
+                        "background": {"solid": {"color": "#FAFBF8"}},
                         "alignment": "Center",
                         "fontSize": 12,
-                        "fontFamily": "Segoe UI"
+                        "fontFamily": "Constantia"
                         }],
          "dropShadow":   [{
                         "show": true,
@@ -40,7 +72,7 @@
             "legend": [{
                   "show": true,
                   "position": "TopCenter",
-                  "fontFamily": "Segoe UI",
+                  "fontFamily": "Constantia",
                   "fontSize": 8                  
                 }],
 		"columnHeaders": [{
@@ -58,7 +90,7 @@
 			"gridHorizontalColor": {"solid": {"color": "#ffffff"}},
 			"gridHorizontalWeight": 1,
 			"rowPadding": 1,
-			"outlineColor": {"solid": {"color": "#ffffff"}},
+			"outlineColor": {"solid": {"color": "#2C2C2C"}},
 			"outlineWeight": 1
 			}]     
         }
@@ -74,7 +106,7 @@
 			"*": {
 				"*": [{
 					"fontSize": 24,
-					"fontFamily": "Segoe UI",
+					"fontFamily": "Constantia",
 					"wordWrap": true,
 					"color": { "solid": { "color": "#C81E24"} }
 				}],
@@ -90,8 +122,12 @@
 					"show": false
 				}]
 			}
-		}    
+		}
+
+            }
+        }
+
+            
+                
+
                          
-                         
-                         }
-                         }
