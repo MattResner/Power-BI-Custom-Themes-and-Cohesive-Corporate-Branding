@@ -1,0 +1,16 @@
+{"name":"Trader Joes Custom Power BI Theme",
+"$schema": "reportThemeSchema.json",
+"dataColors":["#C81E24","#2C2C2C", "#FFFFFF", "#FAFBF8", "#F1E99C", "#093971", "#5f5f5f"],
+"bad":"#580C13", 
+"neutral":"#D5A543",
+"good":"#3f9c6d",
+
+"visualStyles": {
+    
+     "tableEx": {"*": {"background": [{"color":{"solid": {"color":"#FAFBF8"}}}]}}
+
+    ,"slicer": {"*": {"background": [{"color":{"solid": {"color":"#FAFBF8"}}}]}}
+
+}
+
+}
