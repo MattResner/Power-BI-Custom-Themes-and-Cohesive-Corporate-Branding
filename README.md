@@ -1,4 +1,32 @@
-# Power-BI-Custom-Themes-and-Version-Control
+# Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding
+
+### Creating a Turnkey Corporate Brand for your Power BI Development Org
+
+
+### Identifying The Key Stylistic Elements of a Corporate Brand (Trader Joes)
+
+
+![image](https://github.com/user-attachments/assets/551adbac-8af2-4c9d-864f-64bae88b1817)
+
+
+### Brand Identity in Your Organization
+
+
+
+### Setting up a Power BI Branding JSON file.
+
+#### What is a Json File?
+
+#### Using Visual Studio Code with a JSON Schema to Enable Intelesense 
+
+
+
+
+
+
+### Integrating Our Trader Joes Style Elements Into our JSON Theme File
+
+### Transforming our Generic Dashboard Automatically with our Theme File
 
 
 by visiting the homepage of trader joes we can see what sort of corporate identity they have and which colors they typically use. 
@@ -16,6 +44,8 @@ Trader joes uses the following
 #FAFBF8 - The off white on their homepage
 
 #F1E99C - The yellow of the homepage bell
+
+
 
 #093971 - a fun blue they use for their podcast page. 
 
