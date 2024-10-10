@@ -2,8 +2,16 @@
 
 ### Creating a Turnkey Corporate Brand for your Power BI Development Org
 
+Why should we leverage our branding
+
+1. We want our shit to look clean
+2. Developer time doesn't need to be spent fiddling with visuals to get them just so
+3. Developers don't have completly different levels of polish from report to report
+4. Inconcistant brand elements can confuse the data consumer or while consistant brand guidelines can allow for easy recognition and following along
 
 ### Identifying The Key Stylistic Elements of a Corporate Brand (Trader Joes)
+
+![Trader_Joes_Brand_Colors](https://github.com/user-attachments/assets/b4be42de-2377-4efd-ba5d-df84f3d82c91)
 
 
 ![image](https://github.com/user-attachments/assets/551adbac-8af2-4c9d-864f-64bae88b1817)
@@ -63,3 +71,4 @@ To these we will add some important other colors such:
 
 
 https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings
+
