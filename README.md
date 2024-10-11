@@ -2,9 +2,10 @@
 
 ### Creating a Turnkey Corporate Brand for your Power BI Development Org
 
-Why should we leverage our branding
+Before -> After Visualization
 
-1. We want our shit to look clean
+#### Why should you create a Power BI branding template for your organization?
+1. You want your reports to look clean and coherent on an aggregate basis
 2. Developer time doesn't need to be spent fiddling with visuals to get them just so
 3. Developers don't have completly different levels of polish from report to report
 4. Inconcistant brand elements can confuse the data consumer or while consistant brand guidelines can allow for easy recognition and following along
