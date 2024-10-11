@@ -56,25 +56,24 @@ By screenshotting and sampling visuals in MS Paint, or another product we are ab
 4. #F1E99C - The yellow of the homepage bell
 5. #093971 - A fun blue they use for their podcast page
 
+To these primary brand colors we will add some important reporting specific colors such as:
+
+1. #5f5f5f - A dark gray that will add some weight and utility to our power BI enviroment
+2. #580C13 - A darker red to show value severity. Usually I would use a brighter red but that would be uncomfortable close to their primary brand color
+3. #FFFFFF - The standard white seen on TJ's homepage and many others across the web
+4. #D5A543 - A yellow that I like for neutral values
+5. #3f9c6d - A green for postive values that feels in line with TJ's Brands use of tertiary colors
+
 ##### Secondary TJ Colors
-![image](https://github.com/user-attachments/assets/1f893386-137f-49b6-815f-bc4ade94984e)
 
-To these we will add some important reporting specific colors such as:
-
-1. #FFFFFF - The standard white seen on their homepage and many others across the web
-2. #5f5f5f - a Dark gray that will add some weight and utility to our power BI enviroment
-3. #580C13 - a darker red to show value severity. Usually I would use a brighter red but that would be uncomfortable close to their primary brand color
-4. #D5A543 - an yellow that I like for neutral values
-5. #3f9c6d - a green for postive values that feels in line with TJ's Brands use of teriarty colors
+![image](https://github.com/user-attachments/assets/a908333b-727b-4c3e-bb5f-7122e5e88c3d)
 
 
+### Setting up a Power BI Report Theme file
 
+#### What is a JSON File?
 
-### Setting up a Power BI Branding JSON file.
-
-#### What is a Json File?
-
-#### Using Visual Studio Code with a JSON Schema to Enable Intelesense 
+#### Using Visual Studio Code with a JSON Schema to Enable Intellisense 
 
 
 
@@ -85,12 +84,6 @@ To these we will add some important reporting specific colors such as:
 
 ### Transforming our Generic Dashboard Automatically with our Theme File
 
-
-by visiting the homepage of trader joes we can see what sort of corporate identity they have and which colors they typically use. 
-
-By pasting a screenshot of the page into ms paint we can extract the colors that are a major part of their identity. 
-
-Trader joes uses the following
 
 
 
