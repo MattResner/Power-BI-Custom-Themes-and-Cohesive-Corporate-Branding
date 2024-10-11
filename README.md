@@ -4,22 +4,33 @@
 
 Before -> After Visualization
 
-#### Why should you create a Power BI branding template for your organization?
-1. You want your reports to look clean and coherent on an aggregate basis
-2. Developer time doesn't need to be spent fiddling with visuals to get them just so
-3. Developers don't have completly different levels of polish from report to report
-4. Inconcistant brand elements can confuse the data consumer or while consistant brand guidelines can allow for easy recognition and following along
+#### Should you create a Power BI Report Theme for your organization?
+
+I don't recommend creating a branding theme if:
+1. You are a small or one person data team with a limited portfolio of reports (less than 5) and don't have imminate plans for scaling reporting offerings as the time invested in creating a report theme for your organization will have limited value to the time investment.
+2. You have no experience with coding outside of DAX/SQL as you may find the IDE enviroment of Visual Studio Code and simi-structured JSON data to be overwhelming.  
+
+#### What Are the Benefits of Creating a Power BI Report Theme?
+
+If you are a large or growing team with increasing report visibility and have some technical experience with Visual Studio Code or have experience with configuration files (XML, JSON, YAML) you probably already have, or should likely build one or multiple custom Power BI Report theme files for your organization. 
+
+Some of the benefits of a custom report theme include:
+1. Creating a structured and consistant visual style across multiple teams or BI developers
+2. Reducing developer time spent on repeatedly fiddling with visuals and formatting
+3. Enhancing visual interpretability, or contextual familiarity to enable quicker insight generation by data consumers.
+
+a custom Power BI Report theme, along with an agile development framework and explicit, documented, user centered design best practices are leading indicators of a mature and value generating BI development team. 
 
 ### Identifying The Key Stylistic Elements of a Corporate Brand (Trader Joes)
+
+To create a custom branding theme for our Power BI reports, first we need to identify what the central branding identity elements are for an organization. Often, large organizations create and maintain documentation on their brand elements. This information is typically owned by the marketing team and could be called style guidelines, brand style guide or something similar. 
+
+This document should have information 
 
 ![Trader_Joes_Brand_Colors](https://github.com/user-attachments/assets/b4be42de-2377-4efd-ba5d-df84f3d82c91)
 
 
 ![image](https://github.com/user-attachments/assets/551adbac-8af2-4c9d-864f-64bae88b1817)
-
-
-### Brand Identity in Your Organization
-
 
 
 ### Setting up a Power BI Branding JSON file.
