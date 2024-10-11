@@ -19,13 +19,19 @@ Some of the benefits of a custom report theme include:
 2. Reducing developer time spent on repeatedly fiddling with visuals and formatting
 3. Enhancing visual interpretability, or contextual familiarity to enable quicker insight generation by data consumers.
 
-a custom Power BI Report theme, along with an agile development framework and explicit, documented, user centered design best practices are leading indicators of a mature and value generating BI development team. 
+A custom Power BI Report theme, along with an agile development framework and explicit, documented, user centered design best practices are leading indicators of a mature and value generating BI development team. 
 
-### Identifying The Key Stylistic Elements of a Corporate Brand (Trader Joes)
+### Identifying The Key Stylistic Elements of a Corporate Brand (Trader Joe's)
 
-To create a custom branding theme for our Power BI reports, first we need to identify what the central branding identity elements are for an organization. Often, large organizations create and maintain documentation on their brand elements. This information is typically owned by the marketing team and could be called style guidelines, brand style guide or something similar. 
+To create a custom branding theme for our Power BI reports, first we need to identify what the central branding identity elements are for an organization. Often, large organizations create and maintain documentation on their brand elements. This information is typically owned by the marketing team and could be called style guidelines, brand style guide, or something similar. 
 
-This document should have information 
+This document should have information on brand colors and their meaning, including acceptable color combinations and motifs behind the color and other style choices that should inform your choices in the Power BI Theme JSON. For our example we will be inferring the style guidelines for a well known grocery store chain, Trader Joes. 
+
+### Rengineering Style Guidelines for an Example Company (Trader Joe's)
+
+Trader Joe's privately held medium to large grocery company known for carry unique and interesting products under its own store label. At TJ's staff wear hawaiian shirts, and the interior is reminiscent of a the inside of a ship. In my judgment, the company draws inspiration from nautical themes and an interpretation of the British East Indian Company that is perhaps rosier than it is historically accurate. 
+
+Online, Trader Joe's website has a paper and ink feeling with use of beige colors, serif type, and styled visuals that feel hand drawn with layered colors and pencil shading. 
 
 ![Trader_Joes_Brand_Colors](https://github.com/user-attachments/assets/b4be42de-2377-4efd-ba5d-df84f3d82c91)
 
