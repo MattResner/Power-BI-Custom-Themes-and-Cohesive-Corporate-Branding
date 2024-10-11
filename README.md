@@ -31,12 +31,43 @@ This document should have information on brand colors and their meaning, includi
 
 Trader Joe's privately held medium to large grocery company known for carry unique and interesting products under its own store label. At TJ's staff wear hawaiian shirts, and the interior is reminiscent of a the inside of a ship. In my judgment, the company draws inspiration from nautical themes and an interpretation of the British East Indian Company that is perhaps rosier than it is historically accurate. 
 
-Online, Trader Joe's website has a paper and ink feeling with use of beige colors, serif type, and styled visuals that feel hand drawn with layered colors and pencil shading. 
+#### Online Presence
 
 ![Trader_Joes_Brand_Colors](https://github.com/user-attachments/assets/b4be42de-2377-4efd-ba5d-df84f3d82c91)
 
+Online, Trader Joe's website has a paper and ink feeling with use of beige colors, serif type, and styled visuals that feel hand drawn with layered color and pencil shading. They also make use of black border outlines and double horizontal lines to help frame their text boxes. 
 
+In order to mimic this visual brand we should implement a Power BI Theme file that reproduces the following aspects:
+
+1. White background 
+2. Beige or tan foreground visuals
+3. Seriffed font
+4. Drop shadows
+5. Black visual borders
+
+By screenshotting and sampling visuals in MS Paint, or another product we are able to extract and create a list of hex codes that we will need for our Power BI theme. 
+
+##### Primary TJ Colors
 ![image](https://github.com/user-attachments/assets/551adbac-8af2-4c9d-864f-64bae88b1817)
+
+1. #C81E24 - Red, their primary brand and logo color
+2. #2C2C2C - The black seen on their homepage
+3. #FAFBF8 - The off white or beige on their homepage
+4. #F1E99C - The yellow of the homepage bell
+5. #093971 - A fun blue they use for their podcast page
+
+##### Secondary TJ Colors
+![image](https://github.com/user-attachments/assets/1f893386-137f-49b6-815f-bc4ade94984e)
+
+To these we will add some important reporting specific colors such as:
+
+1. #FFFFFF - The standard white seen on their homepage and many others across the web
+2. #5f5f5f - a Dark gray that will add some weight and utility to our power BI enviroment
+3. #580C13 - a darker red to show value severity. Usually I would use a brighter red but that would be uncomfortable close to their primary brand color
+4. #D5A543 - an yellow that I like for neutral values
+5. #3f9c6d - a green for postive values that feels in line with TJ's Brands use of teriarty colors
+
+
 
 
 ### Setting up a Power BI Branding JSON file.
@@ -61,29 +92,7 @@ By pasting a screenshot of the page into ms paint we can extract the colors that
 
 Trader joes uses the following
 
-#C81E24 - Red, their primary branding color
 
-#2C2C2C - The black seen on their homepage
-
-#FFFFFF - the standard white seen on their homepage and many others
-
-#FAFBF8 - The off white on their homepage
-
-#F1E99C - The yellow of the homepage bell
-
-
-
-#093971 - a fun blue they use for their podcast page. 
-
-To these we will add some important other colors such:
-
-#5f5f5f - a Dark gray that will add some weight and utility to our power BI enviroment
-
-#580C13 - a darker red to show value severity. Usually I would use a brighter red but that would be uncomfortable close to their primary brand color
-
-#D5A543 - an yellow that I like for neutral values
-
-#3f9c6d - a green for postive values that feels in line with TJ's Brands use of teriarty colors
 
 
 
