@@ -71,7 +71,11 @@ To these primary brand colors we will add some important reporting specific colo
 
 ### Setting up a Power BI Report Theme file
 
-#### What is a JSON File?
+#### What is a .JSON File?
+
+JSON is a semi-structured file format that is both human readable and machine parsable. It is often used to pass and next semi-structured data within data engineering pipelines, and in this case, as a configuration file for Power BI. As far as configuration file formats go JSON is only somewhat annoying to read with XML being harder to read and YAML being easier to read. 
+
+Due to the complexity of creating a Power BI Theme JSON from scratch. We will first download and link 
 
 #### Using Visual Studio Code with a JSON Schema to Enable Intellisense 
 
