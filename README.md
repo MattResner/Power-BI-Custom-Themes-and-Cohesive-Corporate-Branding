@@ -86,23 +86,60 @@ Under Report Theme JSON Schema we can download the latest version of the reportT
 
 For ease of access I recommend moving the schema file to the same folder as your to-be-created VS code file. If you plan on version controlling the report theme this should be in whatever GitHub linked folder you prefer. 
 
-![image](https://github.com/user-attachments/assets/8000bada-6389-4235-981f-2d6d0c4bb93d)
+  ![image](https://github.com/user-attachments/assets/8000bada-6389-4235-981f-2d6d0c4bb93d)
 
-Then you will want to create a new VS code JSON file by:
-1. Opening VS code, and clicking open folder to path to and open the folder you saved the JSON Schema file in or cloning a repository if you are going to use version control. 
-![image](https://github.com/user-attachments/assets/e2fc605e-6d03-4e4a-b93e-f53a9ec23241)
+**Then you will want to create a new VS code JSON file by:**
 
-2. Selecting "New Text File"
-![image](https://github.com/user-attachments/assets/d8f8deb8-bd73-4be7-97a1-870d936ec224)
+1. Opening VS code, and clicking open folder to path to and open the folder you saved the JSON Schema file in or cloning a repository if you are going to use version control.
 
-3. Clicking "Select a language"
+  ![image](https://github.com/user-attachments/assets/1d0ad8e0-7c51-4a04-b227-7db0cbd9b2b7)
 
-4. Type in and click ".JSON"
+
+3. Clicking file and Selecting "New Text File"
+   
+  ![image](https://github.com/user-attachments/assets/d8f8deb8-bd73-4be7-97a1-870d936ec224)
+
+4. Clicking "Select a language" then type .JSON into the search bar and select the first option
+
 ![image](https://github.com/user-attachments/assets/a01b51ff-f73c-46c9-90da-dad540e1ca81)
 
+5. Name your theme file and link the schema file by using $schema using the below syntax
+
+```
+{"name":"Your Theme Name",
+"$schema": "Your Report Schema File Name"
+}
+```
+For Example 
+
+```
+{"name":"Trader Joes Custom Power BI Theme",
+"$schema": "reportThemeSchema.json"
+
+}
+```
+With the schema set up we can now start writing the syntax for each element of theme customization we will want to make for our Trader Joe's Report Theme. 
 
 
 ### Integrating Our Trader Joes Style Elements Into our JSON Theme File
+
+#### Data Colors
+
+The top of our branding document 
+
+#### Seriffed Font
+
+#### White Background
+
+#### Beige Foreground Visuals
+
+
+
+#### Drop Shadows
+
+#### Black Visual Borders
+
+####
 
 ### Transforming our Generic Dashboard Automatically with our Theme File
 
