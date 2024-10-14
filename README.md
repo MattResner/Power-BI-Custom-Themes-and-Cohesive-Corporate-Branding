@@ -81,7 +81,7 @@ Due to the complexity of creating a Power BI Theme JSON from scratch. We will fi
 
 The [Report Theme JSON Schema Repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) is available via Github and is referenced in the [official microsoft Power BI documentation](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes#set-visual-property-defaults-visualstyles) on desktop report themes.
 
-Under Report Theme JSON Schema we can download the latest version of the reportThemeSchema.JSON. 
+Under Report Theme JSON Schema we can link the latest version of the reportThemeSchema.JSON to our file. 
 ![image](https://github.com/user-attachments/assets/bf260347-b27d-4e43-b099-be73e33e2e15)
 
 For ease of access I recommend moving the schema file to the same folder as your to-be-created VS code file. If you plan on version controlling the report theme this should be in whatever GitHub linked folder you prefer. 
@@ -204,9 +204,27 @@ We can set our configurations for multiple visual types at once within visual st
     }
 ```
 
-To set all visual types to have beige foregrownd visuals we can do
+To set all visual types to have beige foregrownd visuals we can write:
+
+```
+"*":{
+    "*":{ 
+    "background": [{"color":{"solid": {"color":"#FAFBF8"}}}]
+	    }
+    }
+```
 
 #### Drop Shadows
+
+We can do the same for drop shadows on each of the visuals.
+
+```
+"dropShadow":   [{
+                        "show": true,
+                        "color": {"solid": {"color": "#5f5f5f"}},
+                        "position":"Outer",
+                        "preset":"BottomRight"}]
+```
 
 #### Black Visual Borders
 
