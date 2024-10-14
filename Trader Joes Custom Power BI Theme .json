@@ -53,9 +53,7 @@
                         "color": {"solid": {"color": "#5f5f5f"}},
                         "position":"Outer",
                         "preset":"BottomRight"}],
-    
-    "*":{
-    "border": true}
+    "border": ""
         
 
 	
