@@ -75,12 +75,30 @@ To these primary brand colors we will add some important reporting specific colo
 
 JSON is a semi-structured file format that is both human readable and machine parsable. It is often used to pass and next semi-structured data within data engineering pipelines, and in this case, as a configuration file for Power BI. As far as configuration file formats go JSON is only somewhat annoying to read with XML being harder to read and YAML being easier to read. 
 
-Due to the complexity of creating a Power BI Theme JSON from scratch. We will first download and link 
+Due to the complexity of creating a Power BI Theme JSON from scratch. We will first download and link a schema file in a local directory that will allow us to better understand the required structure of the Report Theme file, and prompt us with syntax suggestions for each element as we format them. 
 
 #### Using Visual Studio Code with a JSON Schema to Enable Intellisense 
 
+The [Report Theme JSON Schema Repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) is available via Github and is referenced in the [official microsoft Power BI documentation](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes#set-visual-property-defaults-visualstyles) on desktop report themes.
 
+Under Report Theme JSON Schema we can download the latest version of the reportThemeSchema.JSON. 
+![image](https://github.com/user-attachments/assets/bf260347-b27d-4e43-b099-be73e33e2e15)
 
+For ease of access I recommend moving the schema file to the same folder as your to-be-created VS code file. If you plan on version controlling the report theme this should be in whatever GitHub linked folder you prefer. 
+
+![image](https://github.com/user-attachments/assets/8000bada-6389-4235-981f-2d6d0c4bb93d)
+
+Then you will want to create a new VS code JSON file by:
+1. Opening VS code, and clicking open folder to path to and open the folder you saved the JSON Schema file in or cloning a repository if you are going to use version control. 
+![image](https://github.com/user-attachments/assets/e2fc605e-6d03-4e4a-b93e-f53a9ec23241)
+
+2. Selecting "New Text File"
+![image](https://github.com/user-attachments/assets/d8f8deb8-bd73-4be7-97a1-870d936ec224)
+
+3. Clicking "Select a language"
+
+4. Type in and click ".JSON"
+![image](https://github.com/user-attachments/assets/a01b51ff-f73c-46c9-90da-dad540e1ca81)
 
 
 
