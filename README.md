@@ -95,15 +95,15 @@ For ease of access I recommend moving the schema file to the same folder as your
   ![image](https://github.com/user-attachments/assets/1d0ad8e0-7c51-4a04-b227-7db0cbd9b2b7)
 
 
-3. Clicking file and Selecting "New Text File"
+2. Clicking file and Selecting "New Text File"
    
   ![image](https://github.com/user-attachments/assets/d8f8deb8-bd73-4be7-97a1-870d936ec224)
 
-4. Clicking "Select a language" then type .JSON into the search bar and select the first option
+3. Clicking "Select a language" then type .JSON into the search bar and select the first option
 
 ![image](https://github.com/user-attachments/assets/a01b51ff-f73c-46c9-90da-dad540e1ca81)
 
-5. Name your theme file and link the schema file by using $schema using the below syntax
+4. Name your theme file and link the schema file by using $schema using the below syntax
 
 ```
 {"name":"Your Theme Name",
@@ -125,15 +125,86 @@ With the schema set up we can now start writing the syntax for each element of t
 
 #### Data Colors
 
-The top of our branding document 
+We will start by naming the hex codes for each data color in TJ's brand we identified earlier in our project. We will also call out good, neutral, and bad colors for use in conditional formatting. 
+
+```
+"dataColors":["#C81E24","#2C2C2C", "#FFFFFF", "#FAFBF8", "#F1E99C", "#093971", "#5f5f5f"],
+"bad":"#580C13", 
+"neutral":"#D5A543",
+"good":"#3f9c6d",
+```
+This syntax when loaded as a theme will change our color palette from the Acessible Default:
+
+![image](https://github.com/user-attachments/assets/a64d039e-a05a-42bf-8816-fc5fadc044fd)
+
+
+To this:
+
+![image](https://github.com/user-attachments/assets/345f631a-4be5-4297-b582-8eb5257d5647)
+
 
 #### Seriffed Font
 
+Next we will update our default fonts to a seriffed font that resembles the one that Trajer Joe's uses, Constantia. We will later need to use this font in our configirations for text boxes and visual headers. For all other text such as labels and values, we will use the default font Segoe UI. No one wants to look at table data in an unexpected or serrifed font after all. 
+
+
+```
+"textClasses": {
+        "callout": {
+            "fontSize": 45,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "title": {
+            "fontSize": 14,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "header": {
+            "fontSize": 12,
+            "fontFace": "Constantia",
+            "color": "#2C2C2C"
+        },
+        "label": {
+            "fontSize": 10,
+            "fontFace": "Segoe UI",
+            "color": "#2C2C2C"
+        }
+```
+
 #### White Background
+
+Next we will change the outspace (the space behind the background) to beige and set our background to the default white by opening a nested option, visualStyles and setting options for various elements there.
+
+```
+"visualStyles":{
+    "page":{
+        "*":{
+            "background":[{
+                "color":{
+                    "solid":{
+                        "color":"#FFFFFF"}},
+                "transparency":0}],
+            "outspace":[{
+                 "color":{
+                     "solid":{
+                         "color":"#FAFBF8"}}}]}}
+}
+```
 
 #### Beige Foreground Visuals
 
+We can set our configurations for multiple visual types at once within visual styles by using the asterisk "*"
 
+```
+"*":{
+    "*":{
+ 
+	    }
+    }
+```
+
+To set all visual types to have beige foregrownd visuals we can do
 
 #### Drop Shadows
 
