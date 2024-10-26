@@ -81,16 +81,17 @@ Due to the complexity of creating a Power BI Theme JSON from scratch. We will fi
 
 The [Report Theme JSON Schema Repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) is available via Github and is referenced in the [official microsoft Power BI documentation](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes#set-visual-property-defaults-visualstyles) on desktop report themes.
 
-Under Report Theme JSON Schema we can link the latest version of the reportThemeSchema.JSON to our file. 
-![image](https://github.com/user-attachments/assets/bf260347-b27d-4e43-b099-be73e33e2e15)
+Under Report Theme JSON Schema we can link the latest version of the hosted schema by clicking on the latest schema version on the left hand side of the page under "Report Theme JSON Schema", then clicking the raw button. You will want to save the hyperlink at the top of your browser at this point as you will need to paste it in a later step. 
 
-For ease of access I recommend moving the schema file to the same folder as your to-be-created VS code file. If you plan on version controlling the report theme this should be in whatever GitHub linked folder you prefer. 
+**Navigating to the Schema**
+![Navigating to the Schema](https://github.com/user-attachments/assets/45c5f23d-080e-41c8-8007-54c398f128a6)
 
-  ![image](https://github.com/user-attachments/assets/8000bada-6389-4235-981f-2d6d0c4bb93d)
+**The Raw Schema Page and Hyperlink**
+![RAW Schema Page Link](https://github.com/user-attachments/assets/10e78b2f-d767-4da0-b2fb-528edd51c72f)
 
 **Then you will want to create a new VS code JSON file by:**
 
-1. Opening VS code, and clicking open folder to path to and open the folder you saved the JSON Schema file in or cloning a repository if you are going to use version control.
+1. Opening VS code, and clicking open folder to path to or cloning a repository if you are going to use version control.
 
   ![image](https://github.com/user-attachments/assets/1d0ad8e0-7c51-4a04-b227-7db0cbd9b2b7)
 
@@ -103,22 +104,15 @@ For ease of access I recommend moving the schema file to the same folder as your
 
 ![image](https://github.com/user-attachments/assets/a01b51ff-f73c-46c9-90da-dad540e1ca81)
 
-4. Name your theme file and link the schema file by using $schema using the below syntax
-
-```
-{"name":"Your Theme Name",
-"$schema": "Your Report Schema File Name"
-}
-```
-For Example 
+4. Name your theme file and link the schema by using $schema using the below syntax along with the hyperlink you saved earlier
 
 ```
 {"name":"Trader Joes Custom Power BI Theme",
-"$schema": "reportThemeSchema.json"
+"$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/refs/heads/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.136.json"
 
 }
 ```
-With the schema set up we can now start writing the syntax for each element of theme customization we will want to make for our Trader Joe's Report Theme. 
+With the schema set up we can now start writing the syntax for each element we want for our Trader Joe's Report Theme while taking advantage of intelisense. 
 
 
 ### Integrating Our Trader Joes Style Elements Into our JSON Theme File
