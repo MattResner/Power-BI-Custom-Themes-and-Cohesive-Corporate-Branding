@@ -220,13 +220,40 @@ We can do the same for drop shadows on each of the visuals.
                         "preset":"BottomRight"}]
 ```
 
-#### Black Visual Borders
+#### Black Visual Borders as Default Setting
 
-####
+```
+"border":[
+                    {"show": true},
+                    {"color":{"solid": {"color":"#2C2C2C"}}}]
+```
+
+#### Modifying The Text Box Visual to Have Our Desired Background Color, Font, and Size Text with Black Boarders
+
+As textbox isn't considered to be a graph or visual, we have to change its settings individually. 
+
+```
+ "textbox": {
+        "*": {
+            "*": [{
+                "fontSize": 24,
+                "fontFamily": "Constantia",
+                "wordWrap": true,
+                "fontColor": {"solid": {"color":"#2C2C2C"}},
+                "background": { "solid": { "color": "#FAFBF8"}}}],
+                
+            "border":[
+                    {"show": true},
+                    {"color":{"solid": {"color":"#2C2C2C"}}}]    
+                }},     
+```
+
 
 ### Transforming our Generic Dashboard Automatically with our Theme File
 
+###
 
+Text titles and whatnot next
 
 
 
