@@ -1,10 +1,12 @@
-{"name":"Trader Joes Custom Power BI Theme",
-"$schema": "reportThemeSchema.json",
+
+
+{"$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/refs/heads/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.136.json",
 
 "dataColors":["#C81E24","#2C2C2C", "#FFFFFF", "#FAFBF8", "#F1E99C", "#093971", "#5f5f5f"],
 "bad":"#580C13", 
 "neutral":"#D5A543",
 "good":"#3f9c6d",
+"tableAccent": "#2C2C2C",
 
 "textClasses": {
         "callout": {
@@ -53,8 +55,11 @@
                         "color": {"solid": {"color": "#5f5f5f"}},
                         "position":"Outer",
                         "preset":"BottomRight"}],
-    "border": ""
-        
+    ""
+    
+        "table": {"*": {"border": [{"color":{"solid": {"color":"#2C2C2C"}}}]}},
+
+"table"
 
 	
     
