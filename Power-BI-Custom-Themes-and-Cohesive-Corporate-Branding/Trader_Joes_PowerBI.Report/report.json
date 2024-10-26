@@ -1,0 +1,134 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleDefault\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleDefault",
+            "path": "BuiltInThemes/AccessibleDefault.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Trader_Joes_Logo28605520777219384.jpg",
+            "path": "Trader_Joes_Logo28605520777219384.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Trader Joes Power BI Theme",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "7d11f2b2e308b5a0e59c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0404e02615b0093114a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":448,\"z\":6000,\"width\":224,\"height\":80,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DB Copy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"DB Copy.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 224.00,
+          "x": 8.00,
+          "y": 448.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"0426c93f309ca05ec0d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":256,\"y\":8,\"z\":3000,\"width\":1008,\"height\":80,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Trader Joes Revenue by Store\"}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 1008.00,
+          "x": 256.00,
+          "y": 8.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"4467690601764214ddb5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":256,\"y\":120,\"z\":4000,\"width\":488,\"height\":584,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Series\":[{\"queryRef\":\"DB Copy.STORE_ID\"}],\"Category\":[{\"queryRef\":\"DB Copy.Quarter\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(DB Copy.Total_Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"STORE_ID\"},\"Name\":\"DB Copy.STORE_ID\",\"NativeReferenceName\":\"STORE_ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Quarter\"},\"Name\":\"DB Copy.Quarter\",\"NativeReferenceName\":\"Quarter\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Revenue\"}},\"Function\":0},\"Name\":\"Sum(DB Copy.Total_Revenue)\",\"NativeReferenceName\":\"Sum of Total_Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Revenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DB Copy\"}},\"Property\":\"STORE_ID\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"STORE_ID\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Revenue\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"STORE_ID\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 584.00,
+          "width": 488.00,
+          "x": 256.00,
+          "y": 120.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6ce798c150d911037744\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760,\"y\":96,\"z\":7001,\"width\":512,\"height\":272,\"tabOrder\":7001}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 272.00,
+          "width": 512.00,
+          "x": 760.00,
+          "y": 96.00,
+          "z": 7001.00
+        },
+        {
+          "config": "{\"name\":\"71fe5b950ad380600303\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":256,\"z\":1000,\"width\":224,\"height\":80,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DB Copy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"DB Copy.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 224.00,
+          "x": 8.00,
+          "y": 256.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a530ca6fb67c046072e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":2000,\"width\":224,\"height\":224,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Trader_Joes_Logo28605520777219384.jpg\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"45L\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"70L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 224.00,
+          "width": 224.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"db9b0fe3ca60a07540a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":552,\"z\":7000,\"width\":224,\"height\":80,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DB Copy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"DB Copy.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 224.00,
+          "x": 8.00,
+          "y": 552.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"dec06a4fd8705eddd192\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":352,\"z\":5000,\"width\":224,\"height\":80,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DB Copy.STORE_ID\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"STORE_ID\"},\"Name\":\"DB Copy.STORE_ID\",\"NativeReferenceName\":\"STORE_ID\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 224.00,
+          "x": 8.00,
+          "y": 352.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f4c2efa509d195b76435\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760,\"y\":392,\"z\":0,\"width\":504,\"height\":312,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(DB Copy.STORE_ID)\"},{\"queryRef\":\"Sum(DB Copy.Year)\"},{\"queryRef\":\"DB Copy.Quarter\"},{\"queryRef\":\"Sum(DB Copy.Total_Revenue)\"},{\"queryRef\":\"Sum(DB Copy.COGS)\"},{\"queryRef\":\"Sum(DB Copy.Profit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DB Copy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"STORE_ID\"},\"Name\":\"CountNonNull(DB Copy.STORE_ID)\",\"NativeReferenceName\":\"STORE_ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"Sum(DB Copy.Year)\",\"NativeReferenceName\":\"Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Quarter\"},\"Name\":\"DB Copy.Quarter\",\"NativeReferenceName\":\"Quarter\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Revenue\"}},\"Function\":0},\"Name\":\"Sum(DB Copy.Total_Revenue)\",\"NativeReferenceName\":\"Sum of Total_Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"COGS\"}},\"Function\":0},\"Name\":\"Sum(DB Copy.COGS)\",\"NativeReferenceName\":\"Sum of COGS\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Profit\"}},\"Function\":0},\"Name\":\"Sum(DB Copy.Profit)\",\"NativeReferenceName\":\"Sum of Profit\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"139.0103087089865D\"}}}},\"selector\":{\"metadata\":\"Sum(DB Copy.Total_Revenue)\"}}]},\"vcObjects\":{}}}",
+          "filters": "[]",
+          "height": 312.00,
+          "width": 504.00,
+          "x": 760.00,
+          "y": 392.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleDefault"
+}
