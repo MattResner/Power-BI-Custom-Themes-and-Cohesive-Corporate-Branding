@@ -255,7 +255,10 @@ As textbox isn't considered to be a graph or visual, we have to change its setti
 
 Text titles and whatnot next
 
+![image](https://github.com/user-attachments/assets/3f9dd18b-171b-4c10-8b41-a494981f280a)
 
+
+![image](https://github.com/user-attachments/assets/9fa0aceb-bcb2-4fd5-a01d-dbd7d52cd99a)
 
 
 
