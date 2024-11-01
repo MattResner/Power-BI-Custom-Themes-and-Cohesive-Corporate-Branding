@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"DB Copy\"]"
+        "value": "[\"Simulated Revenue\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.952.0 (24.10)"
+        "value": "2.137.1102.0 (24.10)"
       },
       {
         "name": "PBI_ProTooling",
@@ -40,34 +40,24 @@
     "sourceQueryCulture": "en-US",
     "tables": [
       {
-        "name": "DB Copy",
+        "name": "Simulated Revenue",
         "annotations": [
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
-          {
-            "name": "STORE_ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "648d49a5-dfb9-4b6f-bea2-8a41e3a786f8",
-            "sourceColumn": "STORE_ID",
-            "summarizeBy": "count"
-          },
           {
             "name": "Year",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "changedProperties": [
@@ -75,7 +65,8 @@
                 "property": "DataType"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "5f626931-24ba-43b4-b4a6-157a25c88224",
             "sourceColumn": "Year",
             "summarizeBy": "none"
@@ -94,20 +85,17 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Total_Revenue",
+            "name": "Total Revenue",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
             "lineageTag": "5eec19b2-e2c1-429c-9920-c9b119aaad1e",
-            "sourceColumn": "Total_Revenue",
+            "sourceColumn": "Total Revenue",
             "summarizeBy": "sum"
           },
           {
@@ -116,10 +104,19 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "e35e4763-815c-4e8b-ab75-49d78e2c56b2",
             "sourceColumn": "COGS",
             "summarizeBy": "sum"
@@ -130,31 +127,59 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
             "lineageTag": "9118da0c-5300-4e13-97e9-2d9742dd9b2e",
             "sourceColumn": "Profit",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "StoreId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e14b3048-438c-4cd7-9d78-87f3ca1c656f",
+            "sourceColumn": "StoreId",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Year & Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE('Simulated Revenue'[Year],'Simulated Revenue'[Quarter])",
+            "isDataTypeInferred": true,
+            "lineageTag": "82558414-5715-4694-902a-d8cb0c8cf65a",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "021f2201-6c79-487f-b4f3-c02422ab44fb",
         "partitions": [
           {
-            "name": "DB Copy",
+            "name": "Simulated Revenue",
             "mode": "import",
             "source": {
               "expression": [
                 "let",
-                "    Source = Csv.Document(File.Contents(\"C:\\Users\\AA0250\\OneDrive - Group 1001 Innovation Solutions, LLC\\Personal and Portfolio\\DataBricks Portfolio Project\\Notebooks\\DB Copy.csv\"),[Delimiter=\",\", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\AA0250\\Power_BI_Custom_Themes_And_Version_Control\\Power-BI-Custom-Themes-and-Version-Control\\Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding\\trader_joes_revenue_trending_simulation.csv\"),[Delimiter=\",\", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"STORE_ID\", Int64.Type}, {\"Year\", Int64.Type}, {\"Quarter\", type text}, {\"Total_Revenue\", type number}, {\"COGS\", Int64.Type}, {\"Profit\", type number}})",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Promoted Headers\",{{\"StoreId\", \"STORE_ID\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"STORE_ID\", Int64.Type}, {\"Year\", Int64.Type}, {\"Quarter\", type text}, {\"Total_Revenue\", type number}, {\"COGS\", Int64.Type}, {\"Profit\", type number}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type\",{{\"STORE_ID\", \"StoreId\"}, {\"Total_Revenue\", \"Total Revenue\"}})",
                 "in",
-                "    #\"Changed Type\""
+                "    #\"Renamed Columns1\""
               ],
               "type": "m"
             }
