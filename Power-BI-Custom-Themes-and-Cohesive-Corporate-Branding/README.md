@@ -2,7 +2,7 @@
 
 ### Creating a Turnkey Corporate Brand for your Power BI Development Org
 
-Before -> After Visualization
+![image](https://github.com/user-attachments/assets/1bf47370-fa95-4b7a-9eb7-374ffca8c9e1)
 
 #### Should you create a Power BI Report Theme for your organization?
 
@@ -251,16 +251,27 @@ As textbox isn't considered to be a graph or visual, we have to change its setti
 
 ### Transforming our Generic Dashboard Automatically with our Theme File
 
-###
+Once we have constructed our JSON as outlined in the previous steps we can import it into our report by clicking "View", Selecting the dropdown, then clicking "Browse for Themes", and navigating via windows explorer to the JSON file. 
 
-Text titles and whatnot next
-
-![image](https://github.com/user-attachments/assets/3f9dd18b-171b-4c10-8b41-a494981f280a)
-
-
-![image](https://github.com/user-attachments/assets/9fa0aceb-bcb2-4fd5-a01d-dbd7d52cd99a)
+![image](https://github.com/user-attachments/assets/dccae4bb-612c-4a68-a5b7-82b2af973af1)
 
 
 
-https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings
 
+
+## The End Result of Our Theme File
+
+
+
+![image](https://github.com/user-attachments/assets/81c1cf15-3342-43e1-8c1f-9d958bbf2947)
+![image](https://github.com/user-attachments/assets/cdcb94b2-068d-4e17-a6cf-6f53f17781d9)
+
+
+### Repeating Yourself
+
+If you'd like to follow along with me, check out the following assets in the repo:
+https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/TJ%20Power%20BI%20Theme.json
+https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/Trader%20Joes%20Simulated%20Data.ipynb
+https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/trader_joes_revenue_trending_simulation.csv
+
+You may also clone the repo and open the report yourself, with the Trader Joe's Theme Active, and contribute by creating a branch and adding elements to the report. 
