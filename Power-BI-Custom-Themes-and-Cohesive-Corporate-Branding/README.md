@@ -270,8 +270,14 @@ Once we have constructed our JSON as outlined in the previous steps we can impor
 ### Repeating Yourself
 
 If you'd like to follow along with me, check out the following assets in the repo:
-https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/TJ%20Power%20BI%20Theme.json
-https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/Trader%20Joes%20Simulated%20Data.ipynb
-https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/trader_joes_revenue_trending_simulation.csv
 
-You may also clone the repo and open the report yourself, with the Trader Joe's Theme Active, and contribute by creating a branch and adding elements to the report. 
+[TJ Power BI Theme JSON](https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/TJ%20Power%20BI%20Theme.json)
+
+[Script for Creating Simulated Data](https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/Trader%20Joes%20Simulated%20Data.ipynb)
+
+[Simulated Data](https://github.com/MattResner/Version-Controlled-Power-BI-Projects/blob/main/Power-BI-Custom-Themes-and-Cohesive-Corporate-Branding/trader_joes_revenue_trending_simulation.csv)
+
+You may also clone the repo and open the report yourself (Trader_Joes_PowerBI.pibp), with the Trader Joe's Theme Active, and contribute by creating a branch and adding elements to the report.
+
+Thanks for reading!
+If you have any questions or want to contribute please reach out to me here or on [Linkedin](https://www.linkedin.com/in/matthewresner/)
